@@ -42,8 +42,9 @@ main {
 }
 
 .c-form {
+    margin: 0 12px;
     background-color: var(--white);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -64,3 +65,10 @@ main {
     font-family: 'Karla', sans-serif;
     font-size: var(--font-size-base);
 }
+
+.c-form__error {
+    color: var(--red);
+    font-size: 0.875rem;
+    display: none;
+}
+

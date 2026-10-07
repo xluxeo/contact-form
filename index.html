@@ -14,38 +14,50 @@
       <h1>Contact Us</h1>
       <div class="form-group">
         <label class="c-form__label" for="first-name">First Name <sup class="required">*</sup></label>
-        <input class="c-form__input" type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+        <input class="c-form__input" type="text" id="first-name" name="first-name" aria-describedby="c-form__instructions" autocomplete="given-name" required>
+        <p id="c-form__instructions">Please enter your first name</p>
+        <p class="c-form__error" id="first-name-error">This field is required</p>
       </div>
+       <div class="form-group">
+        <label class="c-form__label" for="last-name">Last Name <sup class="required">*</sup></label>
+        <input class="c-form__input" type="text" id="last-name" name="last-name" aria-describedby="c-form__instructions" autocomplete="family-name" required>
+        <p id="c-form__instructions">Please enter your last name</p>
+        <p class="c-form__error" id="last-name-error">This field is required</p>
+      </div>
+       <div class="form-group">
+        <label class="c-form__label" for="email">Email Address <sup class="required">*</sup></label>
+        <input class="c-form__input" type="email" id="email" name="email" aria-describedby="c-form__instructions" autocomplete="email" required>
+        <p id="c-form__instructions">Please enter a valid email address</p>
+        <p class="c-form__error" id="email-error">Please enter a valid email address</p>
+      </div>
+      <fieldset class="form-group">
+        <legend class="c-form__label">Query Type <sup class="required">*</sup></legend>
+        <p id="c-form__instructions">Please select a query type</p>
+        <div class="c-form__radio-group">
+          <input type="radio" id="general-enquiry" name="query-type" value="general-enquiry" aria-describedby="c-form__instructions" required>
+          <label for="general-enquiry">General Enquiry</label>
+        </div>
+        <div class="c-form__radio-group">
+          <input type="radio" id="support-request" name="query-type" value="support-request" aria-describedby="c-form__instructions" required>
+          <label for="support-request">Support Request</label>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <label class="c-form__label" for="message">Message <sup class="required">*</sup></label>
+        <textarea class="c-form__input" id="message" name="message" rows="5" aria-describedby="c-form__instructions" required></textarea>
+        <p id="c-form__instructions">Please enter your message</p>
+        <p class="c-form__error" id="message-error">This field is required</p>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="consent" name="consent" aria-describedby="c-form__instructions" required>
+        <label for="consent">I consent to being contacted by the team <sup class="required">*</sup></label>
+        <p id="c-form__instructions">To submit this form, please consent to being contacted</p>
+      </div>
+      <button class="c-form__submit" type="submit">Submit</button>
+      <p class="c-form__success" id="success-message">Message Sent!</p>
+      <p class="c-form__success" id="success-message">Thanks for completing the form. We'll be in touch soon!</p>
     </form>
   </main>
-
-  Contact Us
-
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
