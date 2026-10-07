@@ -1,0 +1,66 @@
+:root {
+    /* Color Palette */
+    --green-200:hsl(148, 38%, 91%);
+    --green-600:  hsl(169, 82%, 27%);
+    --red:  hsl(0, 66%, 54%);
+    --white:  hsl(0, 0%, 100%);
+    --grey-500:  hsl(186, 15%, 59%);
+    --grey-900: hsl(187, 24%, 22%) 
+
+    /* Font Sizes */
+    --font-size-base: clamp(1.125rem, 0.8333rem + 0.8333vw, 1.5rem);
+    --font-size-lg: clamp(1.5rem, 1.25rem + 0.8333vw, 2rem);
+
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('./assets/fonts/Karla-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--font-size-base);
+    font-family: 'Karla', sans-serif;
+    background-color: var(--green-200);
+    color: var(--grey-900);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.c-form {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.c-form__label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.c-form__input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--grey-500);
+    border-radius: 0.25rem;
+    font-family: 'Karla', sans-serif;
+    font-size: var(--font-size-base);
+}
